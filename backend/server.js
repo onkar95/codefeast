@@ -19,7 +19,7 @@ const mongoose = require('mongoose');
 const socketio = require('socket.io')
 const io = socketio(http);
 
-const mongoDB = "mongodb+srv://onkar:onkar@cluster0.qey1d.mongodb.net/blog-site-curd?retryWrites=true&w=majority";
+const mongoDB = "";
 
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true, useCreateIndex: true }).then(() => console.log('mongodb connected')).catch(err => console.log(err))
